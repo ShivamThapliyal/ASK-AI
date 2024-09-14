@@ -1,0 +1,143 @@
+/* General Sidebar Styles */
+.sidebar {
+  height: 100vh;
+  background-color: #2c3e50;
+  /* background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 30px 30px; */
+  background: linear-gradient(135deg, #2a2a72 0%, #009ffd 100%);
+
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  color: #ffff06;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Image Styles (applies to all images inside sidebar) */
+.sidebar img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.sidebar img:hover {
+  transform: scale(1.1); /* Slight scaling effect on hover */
+}
+
+/* Top Section Styles */
+.side-top {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.side-top h3 {
+  font-size: 1.2rem;
+  color: #ecf0f1;
+  transition: opacity 0.3s ease;
+}
+.recent {
+  height: 200px;
+  overflow-y: auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+.recent::-webkit-scrollbar {
+  display: none;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #3c4f63;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+/* .message img {
+  width: 24px;
+  height: 24px;
+} */
+
+.recentTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* .message {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+} */
+
+.message:hover {
+  background-color: #4a607d;
+}
+
+.New-chat img,
+.message img {
+  width: 24px;
+  height: 24px;
+}
+
+.New-chat p,
+.message p {
+  color: #00ffff;
+
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+}
+.message p:hover {
+  color: black;
+}
+
+/* Bottom Section Styles */
+.side-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.bottom-in {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bottom-in:hover {
+  background-color: #4a607d;
+  border-radius: 10px;
+}
+
+.bottom-in p {
+  font-size: 1rem;
+  color: #00ffff;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+}
