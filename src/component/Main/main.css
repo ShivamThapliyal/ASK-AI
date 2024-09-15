@@ -177,7 +177,7 @@
   line-height: 2;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .main .container .greet {
     font-size: 30px;
     margin: 0px;
@@ -209,5 +209,49 @@
   }
   .main-bottom .info {
     font-size: 6px;
+  }
+} */
+
+@media (max-width: 600px) {
+  .main .container .greet {
+    font-size: 2rem;
+    margin: 20px 0;
+  }
+
+  /* Adjust card size for small screens */
+  .main .cards {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+  }
+
+  .container .card {
+    height: 160px;
+  }
+
+  .container .card p {
+    font-size: 14px;
+  }
+
+  /* Adjust search input for smaller screens */
+  .main-bottom .search input {
+    flex: none;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .main-bottom img {
+    width: 15px;
+  }
+
+  .search {
+    padding: 5px 10px;
+  }
+
+  .search div {
+    gap: 5px;
+  }
+
+  .main-bottom .info {
+    font-size: 0.8rem;
   }
 }
