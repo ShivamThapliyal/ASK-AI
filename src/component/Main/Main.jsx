@@ -25,7 +25,7 @@ function Main() {
   return (
     <div className="main">
       <div className="main-top">
-        <p>GEMINI</p>
+        <p>ASK-AI</p>
         <img src={assets.icon} alt="User Icon" />
       </div>
 

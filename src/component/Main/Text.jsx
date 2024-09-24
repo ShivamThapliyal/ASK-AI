@@ -4,7 +4,7 @@ import "../Main/main.css";
 function Text() {
   const [text, settext] = useState("");
   const [istyping, setistyping] = useState(true);
-  const fulltext = "Ask me anything b";
+  const fulltext = "Ask me anything";
 
   useEffect(() => {
     let index = 0;
